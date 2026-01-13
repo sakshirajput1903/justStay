@@ -1,0 +1,555 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+  }
+  
+  body {
+    background: #fff;
+  }
+  
+  /* COMMON */
+  .container {
+    width: 1290px;
+    margin: auto;
+  }
+  
+  span {
+    color: orange;
+  }
+  
+  .section-title {
+    color: #999;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* HERO */
+  .hero {
+    height: 90vh;
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+      ),
+      url("images/Home\ Screen.jpg") center/cover no-repeat;
+    color: white;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+  }
+  
+  /* Center menu */
+  .menu {
+    display: flex;
+    gap: 25px;
+    margin: auto;   /* this pushes menu to center */
+  }
+  
+  /* Menu links */
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  /* Logo */
+  .logo {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .logo span {
+    color: orange;
+  }
+  
+  /* Logout button */
+  .logout {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  
+  .hero-content {
+    margin-top: 140px;
+    max-width: 500px;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin: 15px 0;
+  }
+  
+  .hero-buttons {
+    margin-top: 25px;
+  }
+  
+  .btn {
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .primary {
+    background: orange;
+    color: white;
+  }
+  
+  .outline {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    margin-left: 10px;
+  }
+  
+ /* Make the entire section orange full width */
+.stats {
+  background: orange;      /* orange bar spans full width */
+  padding: 30px 0;         /* top & bottom padding */
+}
+
+/* Keep container for content alignment */
+.stats-box {
+  display: flex;
+  justify-content: space-around; /* spread items evenly */
+  align-items: center;
+  color: white;
+  border-radius: 5px;       /* optional for slight rounding */
+}
+
+/* Each stat box vertically stacked */
+.stats-box div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats-box div h3 {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.stats-box div p {
+  font-size: 16px;
+  margin: 0;
+}
+
+
+  
+  /* ROOMS */
+  .rooms {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .room-cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 40px;
+    
+  }
+  
+  .room-card {
+    width: 300px;
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+  
+  .room-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .room-card h4 {
+    margin: 15px 0 5px;
+  }
+  
+  /* SERVICES */
+  .services {
+    background: #f6f6f6;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+  }
+  
+  .service {
+    background: white;
+    padding: 35px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .service.active {
+    background: orange;
+    color: white;
+  }
+
+  .desc {
+    line-height: 1.6;
+  }
+  
+  .desc span {
+    color: white;
+  }
+  
+
+/* TESTIMONIAL SECTION */
+.testimonial {
+  background: #ffffff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* TITLE */
+.section-title {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.testimonial h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 70px;
+  color: #222;
+}
+
+.testimonial h2 span {
+  color: #ff8c2b;
+}
+
+/* GRID */
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+
+/* BOX */
+.testimonial-box {
+  padding: 10px;
+}
+
+/* ICON */
+.testimonial-box i {
+  font-size: 28px;
+  color: #ff8c2b;
+  margin-bottom: 18px;
+}
+
+/* TEXT */
+.testimonial-box p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+/* USER */
+.comment-user strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+}
+
+.comment-user span {
+  display: block;
+  font-size: 13px;
+  color: #999;
+  margin-top: 4px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fff;
+}
+
+.about {
+  padding: 80px 0;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 70px;
+  color: #555;
+  letter-spacing: 1px;
+}
+
+/* Grid layout */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+/* Reverse second row */
+.about-grid.reverse {
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Image styling */
+.image-box {
+  border-radius: 30px;
+  padding: 10px;
+  border: 1px solid #eee;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 25px;
+  display: block;
+}
+
+/* Text */
+.text-box h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.text-box h2 span {
+  color: #ff7a2f;
+}
+
+.text-box p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.text-box .light-text {
+  color: #888;
+}
+
+/* Button */
+.btn {
+  margin-top: 20px;
+  padding: 10px 26px;
+  background: transparent;
+  border: 1.5px solid #ff7a2f;
+  color: #ff7a2f;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff7a2f;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-grid.reverse {
+    grid-template-columns: 1fr;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.services {
+  background: #ffffff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.services h2 span {
+  color: orange;
+}
+
+/* GRID */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.service {
+  background: #fff;
+  padding: 40px 25px;
+  border-radius: 0px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  width: 100%;           
+  aspect-ratio: 1 / 1; 
+  max-width: 270px;      /* maximum width */
+  margin: auto;          /* center in grid column */
+}
+
+/* ICON */
+.service i {
+  font-size: 36px;
+  color: orange;
+  margin-bottom: 15px;
+}
+
+/* TEXT */
+.service h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.6;
+}
+
+/* ACTIVE ORANGE BOX */
+.service.active {
+  background: orange;
+  color: #fff;
+}
+
+.service.active i,
+.service.active p {
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #ffffff; /* PURE WHITE */
+  padding: 80px 0;
+}
+
+/* Container */
+.footer-container {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.5fr repeat(4, 1fr); /* Brand + 4 columns */
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Brand section */
+.footer-brand h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #111;
+}
+
+.footer-brand h2 span {
+  color: #ff8c2b;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  color: #777;
+  line-height: 22px;
+  margin-top: 12px;
+}
+
+.footer-brand .email {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #999;
+}
+
+/* Footer columns */
+.footer-box h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #777;
+  margin-bottom: 14px;
+}
+
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-box ul li {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-box ul li:hover {
+  color: #ff8c2b;
+}
